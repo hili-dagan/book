@@ -37,7 +37,7 @@ public class ScoreboardActivity extends AppCompatActivity {
     private TextView firstScoreValue, secondScoreValue, thirdScoreValue, currentScoreText, personalBestText;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)   {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scoreboard);
 
