@@ -32,7 +32,7 @@ public class ScoreboardActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference globalScoreRef;
     private DatabaseReference userRef;
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth  ;
 
     private TextView firstScoreValue, secondScoreValue, thirdScoreValue, currentScoreText, personalBestText;
 
