@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag2"
+    tools:context=".informationFragment">
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="How to play\nDouble or nothing"
+        android:textColor="#CCC5C5"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="After finishing the game,\nyou have an option to\n double your score by coin flipping.\n You can retreat as well.\n\nYou may choose Head or Tails"
+        android:textColor="#CCC5C5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_title" />
+
+    <ImageButton
+        android:id="@+id/close_settings_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="88dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#DCE2E8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

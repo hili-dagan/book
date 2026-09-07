@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bag2"
+    android:padding="20dp"
+    tools:context=".settingsFragment">
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Profile: "
+        android:textColor="#DCE2E8"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="132dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text=""
+        android:textColor="#DCE2E8"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/volume_control_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Volume Control:"
+        android:textColor="#DCE2E8"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/volume_seekBar"
+        android:layout_width="149dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="48dp"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="#DCE2E8"
+
+        android:thumbTint="#CCC5C5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volume_control_tv" />
+
+    <TextView
+        android:id="@+id/volume_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="116dp"
+        android:text="Volume: 50%"
+        android:textColor="#DCE2E8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volume_control_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/leaderboard_btn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="176dp"
+        android:background="@drawable/button_3d_selector"
+        android:shadowColor="#FF000000"
+        android:text="LeaderBoard"
+        android:textColor="#DCE2E8"
+        android:textColorLink="#DCE2E8"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/close_settings_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="84dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#DCE2E8"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

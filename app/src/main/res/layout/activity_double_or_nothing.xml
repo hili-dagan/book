@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DoubleOrNothingXML"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoubleOrNothingActivity"
+    android:background="@drawable/bag2">
+
+    <ImageButton
+        android:id="@+id/info_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info_btn" />
+
+    <TextView
+        android:id="@+id/DoubleOrNothing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#FF000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Double Or Nothing"
+        android:textColor="#CCC5C5"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/coin_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/headhen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoubleOrNothing_tv" />
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#D5CCCC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_iv" />
+
+    <Button
+        android:id="@+id/skip_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Skip!"
+        android:textColor="#CCC5C5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/heads_btn"
+        android:layout_width="140dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/heads_3d_selector"
+        android:text="Heads"
+        android:textSize="20dp"
+        android:textColorLink="#DCE2E8"
+        android:textColor="#DCE2E8"
+        app:layout_constraintBottom_toTopOf="@+id/skip_btn"
+        app:layout_constraintEnd_toStartOf="@+id/eggs_btn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/eggs_btn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="@drawable/eggs_3d_selector"
+        android:text="Eggs"
+        android:textSize="20dp"
+        android:textColor="#DCE2E8"
+        android:textColorLink="#DCE2E8"
+        app:layout_constraintBottom_toBottomOf="@+id/heads_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heads_btn" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
